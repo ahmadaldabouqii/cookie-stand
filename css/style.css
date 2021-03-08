@@ -1,0 +1,39 @@
+img{
+    margin-top: 10px;
+    display: block;
+    margin-left: 25%;
+    /* margin-right: auto; */
+    margin-bottom: 25px;
+}
+
+body{
+    background-color:#80daff ;
+    color: chocolate;
+}
+
+li{
+    font-size: large;
+    color:black;
+    font-family: cursive;
+}
+
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+
+a, u {
+    text-decoration: none;
+}
+
+nav{
+    
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    font-size: 50px;
+    font-family: cursive;
+    margin-bottom: 15px;
+}
