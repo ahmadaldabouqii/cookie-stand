@@ -8,7 +8,7 @@ img{
 
 body{
     background-color:#80daff ;
-    color: chocolate;
+    
 }
 
 li{
@@ -26,10 +26,6 @@ a, u {
     text-decoration: none;
 }
 
-nav{
-    
-}
-
 footer{
     position: fixed;
     bottom:0;
@@ -37,3 +33,14 @@ footer{
     font-family: cursive;
     margin-bottom: 15px;
 }
+
+table{
+    border-collapse: collapse;
+    border:2px black solid;
+  }
+  
+  td, th, tr{
+    border:solid 2px black;
+    font-family: cursive;
+    padding : 10px;
+  }
