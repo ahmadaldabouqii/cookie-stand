@@ -127,6 +127,11 @@ form.addEventListener('submit', function (e) {
 })
 
 
+function setColor() {
+    document.body.style.backgroundColor = '#ffff94';
+}
+
+
 avg.innerHTML = 'Total: ' + total + ' cookies';
 
 // table.appendChild(td);
