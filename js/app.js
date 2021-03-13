@@ -4,8 +4,6 @@ let total = 0;
 let table = document.getElementById('table');
 let avg = document.createElement('td');
 
-
-
 function Data(min, max) {
     this.min = min;
     this.max = max;

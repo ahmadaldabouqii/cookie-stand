@@ -73,7 +73,8 @@ button{
   display: inline-block;
   padding: 15px;
   border: 3px solid blueviolet;
-  
+  background-color: rgb(233, 173, 99);
+  border-radius: 5px;
 }
 
 .nav{
@@ -90,4 +91,7 @@ button{
     height: 65px;
     font-weight: 1000;
     font-family: cursive;
+    border: 5px solid darkblue;
+    border-radius: 9px;
+    background-color: rgb(212, 206, 206);
 }
