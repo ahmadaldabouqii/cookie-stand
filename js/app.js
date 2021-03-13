@@ -58,6 +58,8 @@ for (let i = 5; i < 21; i++) {
     }
 }
 
+
+
 let tr = document.createElement('tr');
 
 (function addRow() {
@@ -102,6 +104,27 @@ for (let i = 0; i < hoursWork.length; i++) {
         table.appendChild(tr4);
     }
 }
+
+let form = document.getElementById('form');
+let submit_btn = document.getElementById('submit_btn');
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    let st_location = e.target.StoreLocation.value;
+    let min = e.target.min.value;
+    let max = e.target.max.value;
+    let avg = e.target.avg.value;
+
+    if ((min || max || avg) === "" || (min || max || avg) === null) {
+        alert('Please Enter Correct!');
+    } else {
+        Country.push(st_location);
+        let td = document.createElement('td');
+        td.innerHTML = Country[5];
+        table.appendChild(td);
+        hourlyCustomers(min, max);
+    }
+})
 
 
 avg.innerHTML = 'Total: ' + total + ' cookies';
