@@ -124,7 +124,6 @@ form.addEventListener('submit', function (e) {
     }
 })
 
-
 function setColor() {
     document.body.style.backgroundColor = '#ffff94';
 }
