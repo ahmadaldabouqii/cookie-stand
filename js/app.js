@@ -74,7 +74,7 @@ for(let i = 0; i < branches.length; i++){
   branches[i].content();
 }
 
-function footer(){
+function tableFooter(){
   let tableRow = document.createElement('tr');
   table.appendChild(tableRow);
   let totalCell = document.createElement('td');
@@ -98,4 +98,4 @@ function footer(){
   tableRow.appendChild(finalTotal);
   finalTotal.textContent = totalOfTotal;
 }
-footer();
+tableFooter();
