@@ -10,34 +10,33 @@ let unOrderedList = document.createElement('ul');
 let avg = document.createElement('li');
 
 let seattleData = {
-  seattle: [],
-  hours: function () {
+    seattle: [],
+    hours: function () {
 
-    for (let i = 6; i < 20; i++) {
-      if (i < 12) {
-        total += hourlyCustomers(23, 65);
-        this.seattle.push(i + 'am: ' + hourlyCustomers(23, 65) + ' cookies');
-      } else {
-        total += hourlyCustomers(23, 65);
-        this.seattle.push(i + 'pm: ' + hourlyCustomers(23, 65) + ' cookies');
-      }
+        for (let i = 6; i < 20; i++) {
+            if (i < 12) {
+                total += hourlyCustomers(23, 65);
+                this.seattle.push(i + 'am: ' + hourlyCustomers(23, 65) + ' cookies');
+            } else {
+                total += hourlyCustomers(23, 65);
+                this.seattle.push(i + 'pm: ' + hourlyCustomers(23, 65) + ' cookies');
+            }
+        }
+    },
+
+    avgCookiesSales: function () {
+        return 'Avg Cookie / Sale: ' + total / 365;
     }
-  },
-
-  avgCookiesSales: function () {
-    return 'Avg Cookie / Sale: ' + total / 365;
-  }
-};
-
+}
 seattleData.hours();
 function hourlyCustomers(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 for (let i = 0; i < seattleData.seattle.length; i++) {
-  let li = document.createElement('li');
-  li.innerHTML = seattleData.seattle[i];
-  unOrderedList.appendChild(li);
+    let li = document.createElement('li');
+    li.innerHTML = seattleData.seattle[i];
+    unOrderedList.appendChild(li);
 }
 
 main.appendChild(seattle);
@@ -58,31 +57,31 @@ let tokyo_avg = document.createElement('li');
 
 
 let tokyoData = {
-  tokyo: [],
-  hours: function () {
+    tokyo: [],
+    hours: function () {
 
-    for (let i = 6; i < 20; i++) {
-      if (i < 12) {
-        total += hourlyCustomers(3, 24);
-        this.tokyo.push(i + 'am: ' + hourlyCustomers(3, 24) + ' cookies');
-      } else {
-        total += hourlyCustomers(3, 24);
-        this.tokyo.push(i + 'pm: ' + hourlyCustomers(3, 24) + ' cookies');
-      }
+        for (let i = 6; i < 20; i++) {
+            if (i < 12) {
+                total += hourlyCustomers(3, 24);
+                this.tokyo.push(i + 'am: ' + hourlyCustomers(3, 24) + ' cookies');
+            } else {
+                total += hourlyCustomers(3, 24);
+                this.tokyo.push(i + 'pm: ' + hourlyCustomers(3, 24) + ' cookies');
+            }
+        }
+    },
+
+    avgCookiesSales: function () {
+        return 'Avg Cookie / Sale: ' + total / 365;
     }
-  },
-
-  avgCookiesSales: function () {
-    return 'Avg Cookie / Sale: ' + total / 365;
-  }
-};
+}
 
 tokyoData.hours();
 
 for (let i = 0; i < tokyoData.tokyo.length; i++) {
-  let li = document.createElement('li');
-  li.innerHTML = tokyoData.tokyo[i];
-  tokyo_ul.appendChild(li);
+    let li = document.createElement('li');
+    li.innerHTML = tokyoData.tokyo[i];
+    tokyo_ul.appendChild(li);
 }
 
 tokyo_avg.innerHTML = 'Total: ' + total + ' cookies';
@@ -101,31 +100,31 @@ let Dubai_ul = document.createElement('ul');
 let Dubai_avg = document.createElement('li');
 
 let DubaiData = {
-  Dubai: [],
-  hours: function () {
+    Dubai: [],
+    hours: function () {
 
-    for (let i = 6; i < 20; i++) {
-      if (i < 12) {
-        total += hourlyCustomers(11, 38);
-        this.Dubai.push(i + 'am: ' + hourlyCustomers(11, 38) + ' cookies');
-      } else {
-        total += hourlyCustomers(11, 38);
-        this.Dubai.push(i + 'pm: ' + hourlyCustomers(11, 38) + ' cookies');
-      }
+        for (let i = 6; i < 20; i++) {
+            if (i < 12) {
+                total += hourlyCustomers(11, 38);
+                this.Dubai.push(i + 'am: ' + hourlyCustomers(11, 38) + ' cookies');
+            } else {
+                total += hourlyCustomers(11, 38);
+                this.Dubai.push(i + 'pm: ' + hourlyCustomers(11, 38) + ' cookies');
+            }
+        }
+    },
+
+    avgCookiesSales: function () {
+        return 'Avg Cookie / Sale: ' + total / 365;
     }
-  },
-
-  avgCookiesSales: function () {
-    return 'Avg Cookie / Sale: ' + total / 365;
-  }
-};
+}
 
 DubaiData.hours();
 
 for (let i = 0; i < DubaiData.Dubai.length; i++) {
-  let li = document.createElement('li');
-  li.innerHTML = DubaiData.Dubai[i];
-  Dubai_ul.appendChild(li);
+    let li = document.createElement('li');
+    li.innerHTML = DubaiData.Dubai[i];
+    Dubai_ul.appendChild(li);
 }
 
 Dubai_avg.innerHTML = 'Total: ' + total + ' cookies';
@@ -144,31 +143,31 @@ let Paris_ul = document.createElement('ul');
 let Paris_avg = document.createElement('li');
 
 let ParisData = {
-  Paris: [],
-  hours: function () {
+    Paris: [],
+    hours: function () {
 
-    for (let i = 6; i < 20; i++) {
-      if (i < 12) {
-        total += hourlyCustomers(20, 38);
-        this.Paris.push(i + 'am: ' + hourlyCustomers(20, 38) + ' cookies');
-      } else {
-        total += hourlyCustomers(20, 38);
-        this.Paris.push(i + 'pm: ' + hourlyCustomers(20, 38) + ' cookies');
-      }
+        for (let i = 6; i < 20; i++) {
+            if (i < 12) {
+                total += hourlyCustomers(20, 38);
+                this.Paris.push(i + 'am: ' + hourlyCustomers(20, 38) + ' cookies');
+            } else {
+                total += hourlyCustomers(20, 38);
+                this.Paris.push(i + 'pm: ' + hourlyCustomers(20, 38) + ' cookies');
+            }
+        }
+    },
+
+    avgCookiesSales: function () {
+        return 'Avg Cookie / Sale: ' + total / 365;
     }
-  },
-
-  avgCookiesSales: function () {
-    return 'Avg Cookie / Sale: ' + total / 365;
-  }
-};
+}
 
 ParisData.hours();
 
 for (let i = 0; i < ParisData.Paris.length; i++) {
-  let li = document.createElement('li');
-  li.innerHTML = ParisData.Paris[i];
-  Paris_ul.appendChild(li);
+    let li = document.createElement('li');
+    li.innerHTML = ParisData.Paris[i];
+    Paris_ul.appendChild(li);
 }
 
 Paris_avg.innerHTML = 'Total: ' + total + ' cookies';
@@ -187,31 +186,31 @@ let Lima_ul = document.createElement('ul');
 let Lima_avg = document.createElement('li');
 
 let LimaData = {
-  Lima: [],
-  hours: function () {
+    Lima: [],
+    hours: function () {
 
-    for (let i = 6; i < 20; i++) {
-      if (i < 12) {
-        total += hourlyCustomers(2, 16);
-        this.Lima.push(i + 'am: ' + hourlyCustomers(2, 16) + ' cookies');
-      } else {
-        total += hourlyCustomers(2, 16);
-        this.Lima.push(i + 'pm: ' + hourlyCustomers(2, 16) + ' cookies');
-      }
+        for (let i = 6; i < 20; i++) {
+            if (i < 12) {
+                total += hourlyCustomers(2, 16);
+                this.Lima.push(i + 'am: ' + hourlyCustomers(2, 16) + ' cookies');
+            } else {
+                total += hourlyCustomers(2, 16);
+                this.Lima.push(i + 'pm: ' + hourlyCustomers(2, 16) + ' cookies');
+            }
+        }
+    },
+
+    avgCookiesSales: function () {
+        return 'Avg Cookie / Sale: ' + total / 365;
     }
-  },
-
-  avgCookiesSales: function () {
-    return 'Avg Cookie / Sale: ' + total / 365;
-  }
-};
+}
 
 LimaData.hours();
 
 for (let i = 0; i < LimaData.Lima.length; i++) {
-  let li = document.createElement('li');
-  li.innerHTML = LimaData.Lima[i];
-  Lima_ul.appendChild(li);
+    let li = document.createElement('li');
+    li.innerHTML = LimaData.Lima[i];
+    Lima_ul.appendChild(li);
 }
 
 Lima_avg.innerHTML = 'Total: ' + total + ' cookies';
@@ -219,4 +218,3 @@ Lima_ul.appendChild(Lima_avg);
 main.appendChild(Lima_ul);
 
 // ===========================================================================================================
-
