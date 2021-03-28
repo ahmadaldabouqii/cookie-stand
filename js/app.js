@@ -99,3 +99,24 @@ function tableFooter(){
   finalTotal.textContent = totalOfTotal;
 }
 tableFooter();
+
+let form = document.getElementById('form');
+form.addEventListener('submit', insertNewStore);
+
+function insertNewStore(event){
+  event.preventDefault();
+  let storeName = event.target.userLocation.value;
+  let maxHoursCustomers = event.target.MaxHourely.value;
+  let minHoursCustomers = event.target.MinHourely.value;
+  let avgCookiesByCustomer = event.target.AvgCookie.value;
+
+  let newStore  = new Stores(storeName, maxHoursCustomers, minHoursCustomers, avgCookiesByCustomer);
+  table.deleteRow(table.rows.length - 1); //to remove last row
+  newStore.content();
+  tableFooter(); //to restore the removed row at last.
+
+  event.target.userLocation.value = '';
+  event.target.MaxHourely.value = '';
+  event.target.MinHourely.value = '';
+  event.target.AvgCookie.value = '';
+}
